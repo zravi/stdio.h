@@ -1,0 +1,72 @@
+
+CREATE database college;
+show databases;
+use college;
+CREATE TABLE student( rollnm VARCHAR(20) NOT NULL , fname VARCHAR(20), lname VARCHAR(20), branch VARCHAR(10), semister VARCHAR(5), address VARCHAR(30), phon_no VARCHAR(10));
+INSERT INTO
+	student (rollnm, fname, lname, branch, semister, address, phon_no) 
+VALUES
+	(
+		111, 'ravi', 'yadav', 'cs', 5, 'indore', 00000
+	)
+;
+INSERT INTO
+	student (rollnm, fname, lname, branch, semister, address, phon_no) 
+VALUES
+	(
+		122, 'ab', 'xy', 'it', 5, 'indore', 11111
+	)
+;
+INSERT INTO
+	student (rollnm, fname, lname, branch, semister, address, phon_no) 
+VALUES
+	(
+		113, 'cd', 'zl', 'cs', 0, 'indore', 77777
+	)
+;
+ALTER TABLE student RENAME COLUMN phon_no TO contact;
+ALTER TABLE student ADD COLUMN test INT;
+SELECT
+	* 
+FROM
+	college.student;
+SELECT
+	rollnm
+FROM
+	student;
+SELECT
+	rollnm,
+	fname,
+	lname 
+FROM
+	student 
+WHERE
+	branch = cse;
+SELECT
+	rollnm,
+	fname,
+	lname 
+FROM
+	student 
+WHERE
+	address = indore;
+UPDATE
+	student 
+SET
+	branch = 'me' 
+WHERE
+	branch = 'it';
+DESC student;
+
+DROP TABLE student;
+DESC student;
+
+
+
+
+
+
+
+1: Download of product 'workbench' started from http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.21-winx64.msi
+2: Download of product 'mysql-server' started from http://cdn.mysql.com/Downloads/MySQL-8.0/mysql-8.0.21-winx64.msi
+1: Download of package 'MySQL Workbench 8.0.21' succeeded

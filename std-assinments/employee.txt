@@ -1,0 +1,61 @@
+show databases;
+DROP DATABASE college;
+CREATE database college;
+show databases;
+use college;
+CREATE TABLE employee( Eid VARCHAR(20) NOT NULL , fname VARCHAR(20), lname VARCHAR(20), post VARCHAR(10), salary VARCHAR(5), address VARCHAR(30), phon_no VARCHAR(10));
+INSERT INTO
+	employee (Eid, fname, lname, post, salary, address, phon_no) 
+VALUES
+	(
+		711, 'abxv', 'abcd', 'worker', 1500, 'indore', 0005400
+	)
+;
+INSERT INTO
+	employee (Eid, fname, lname, post, salary, address, phon_no)  
+VALUES
+	(
+		911, 'abgv', 'abcd', 'worker', 1500, 'indore', 000450
+	)
+;
+INSERT INTO
+	employee (Eid, fname, lname, post, salary, address, phon_no) 
+VALUES
+	(
+		011, 'avdv', 'abcd', 'worker', 1500, 'indore', 0005600
+	)
+;
+ALTER TABLE employee RENAME COLUMN phon_no TO contact;
+ALTER TABLE employee ADD COLUMN test INT;
+SELECT
+	* 
+FROM
+	college.employee;
+SELECT
+	Eid
+FROM
+	employee;
+SELECT
+	Eid,
+	fname,
+	lname 
+FROM
+	employee 
+WHERE
+	salary = 1500;
+SELECT
+	Eid,
+	fname,
+	lname 
+FROM
+	employee
+WHERE
+	Eid = 711;
+UPDATE
+	employee 
+SET
+	address = 'a1112' 
+WHERE
+	Eid = '011';
+    
+    
