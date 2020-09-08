@@ -70,3 +70,4 @@ DESC student;
 1: Download of product 'workbench' started from http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.21-winx64.msi
 2: Download of product 'mysql-server' started from http://cdn.mysql.com/Downloads/MySQL-8.0/mysql-8.0.21-winx64.msi
 1: Download of package 'MySQL Workbench 8.0.21' succeeded
+vb c++redist 2019
